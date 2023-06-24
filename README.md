@@ -81,3 +81,16 @@ Quer fazer parte desse projeto? Clique [AQUI](CONTRIBUTING.md) e leia como contr
 ## 📝 Licença
 
 Esse projeto está sob licença. Veja o arquivo [LICENÇA](LICENSE.md) para mais detalhes.
+
+
+<div align="center">
+  <br/>
+  <br/>
+  <br/>
+    <div>
+      <h1>Open Source</h1>
+      <sub>Copyright © 2023 - <a href="https://github.com/iuricode">cybersafezone</sub></a>
+    </div>
+    <br/>
+    💖
+</div>
