@@ -1,7 +1,7 @@
 # 🔏 CYBERSAFEZONE 💾
 
 
-<img src="https://github.com/iuricode/readme-template/blob/main/repository/exemplo-image.png?raw=true" alt="exemplo imagem">
+<img src="https://media.discordapp.net/attachments/1098139264258158602/1122099268006719538/Group_2.png?width=1092&height=670" alt="exemplo imagem">
 
 ### Ajustes e melhorias
 
