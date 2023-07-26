@@ -11,7 +11,7 @@
 O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas nas seguintes tarefas:
 
 - [x] Escolha do design
-- [ ] Construção do site
+- [x] Construção do site
 - [ ] Codificação do bot discord
 - [ ] Documentos
 - [ ] Apresentação final
