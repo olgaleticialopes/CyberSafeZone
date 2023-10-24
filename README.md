@@ -1,10 +1,19 @@
 # 🔏 CYBERSAFEZONE 💾
 
 ## HomePage
-<img src="https://media.discordapp.net/attachments/1098139264258158602/1122099268006719538/Group_2.png?width=1092&height=670" alt="exemplo imagem">
+<img src="https://media.discordapp.net/attachments/1020872567738863716/1166514753443729480/image.png?ex=654ac486&is=65384f86&hm=f7f22f4d1afc90da8280af4637d2d4d9674349d34a19fd6f7405c941a79d4f2a&=&width=1299&height=580" alt="exemplo imagem">
 
 ## Paleta de cores
-<img src="" alt="https://media.discordapp.net/attachments/1020872567738863716/1166513369063358634/Group_3.png?ex=654ac33b&is=65384e3b&hm=f5915d0938f8c60a366caba506c63160eb73cfb2f7629d5db84d21e21ccade56&=&width=1009&height=580">
+<img src="https://media.discordapp.net/attachments/1020872567738863716/1166513369063358634/Group_3.png?ex=654ac33b&is=65384e3b&hm=f5915d0938f8c60a366caba506c63160eb73cfb2f7629d5db84d21e21ccade56&=&width=1009&height=580" alt="paleta">
+
+<div align="center">
+    <div>
+      <h1>Figma</h1>
+      <sub> Para ver o nosso design completo acesse: <a href="https://github.com/iuricode"></a>
+    </div>
+    <br/>
+    💖
+</div>
 
 ## 📫 Contribuindo para CyberSafeZone
 Para contribuir com CyberSafeZone, siga estas etapas:
