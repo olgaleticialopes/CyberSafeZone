@@ -4,17 +4,7 @@
 <img src="https://media.discordapp.net/attachments/1098139264258158602/1122099268006719538/Group_2.png?width=1092&height=670" alt="exemplo imagem">
 
 ## Paleta de cores
-<img src="" alt="exemplo imagem">
-
-### Ajustes e melhorias
-
-O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas nas seguintes tarefas:
-
-- [x] Escolha do design
-- [x] Construção do site
-- [ ] Codificação do bot discord
-- [ ] Documentos
-- [ ] Apresentação final
+<img src="" alt="https://media.discordapp.net/attachments/1020872567738863716/1166513369063358634/Group_3.png?ex=654ac33b&is=65384e3b&hm=f5915d0938f8c60a366caba506c63160eb73cfb2f7629d5db84d21e21ccade56&=&width=1009&height=580">
 
 ## 📫 Contribuindo para CyberSafeZone
 Para contribuir com CyberSafeZone, siga estas etapas:
@@ -41,14 +31,6 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
         </sub>
       </a>
     </td>
-     <td align="center">
-      <a href="#">
-        <img src="https://avatars.githubusercontent.com/u/89092519?v=4" width="100px;" alt="Ana"/><br>
-        <sub>
-          <b>Ana Carolina Regginato</b>
-        </sub>
-      </a>
-    </td>
     <td align="center">
       <a href="#">
         <img src="https://avatars.githubusercontent.com/u/82236608?v=4" width="100px;" alt="João"/><br>
@@ -65,14 +47,6 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
         </sub>
       </a>
     </td>
-     <td align="center">
-      <a href="#">
-        <img src="https://avatars.githubusercontent.com/u/89092519?v=4" width="100px;" alt="Kamy"/><br>
-        <sub>
-          <b>Kamily Simeão</b>
-        </sub>
-      </a>
-    </td>
   </tr>
 </table>
 
@@ -85,6 +59,9 @@ Quer fazer parte desse projeto? Clique [AQUI](CONTRIBUTING.md) e leia como contr
 
 Esse projeto está sob licença. Veja o arquivo [LICENÇA](LICENSE) para mais detalhes.
 
+## 🖌️ Design
+
+O design deste projeto foi inspirado no site [InfinityBank](infinitybank.vercel.app) de Larisn. Veja o arquivo Oficial do site em: [Infinitybank](https://github.com/larisn/infinitybank) para mais detalhes.
 
 <div align="center">
   <br/>
