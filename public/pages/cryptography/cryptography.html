@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Criptografia e Descriptografia</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.3.0/crypto-js.js"></script>
+    <link rel="stylesheet" href="../../assets/style/functions/cryptography/cryptography.css">
+</head>
+<body>
+    <div class="card">
+        <h1>Criptografia e Descriptografia de Mensagem</h1>
+        <label for="mensagem">Digite a mensagem:</label>
+        <input type="text" id="mensagem" placeholder="Insira a mensagem">
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" placeholder="Insira a senha">
+        <button id="criptografar">Criptografar</button>
+        <button id="descriptografar">Descriptografar</button>
+        <p id="mensagem-criptografada">Mensagem criptografada: <span></span></p>
+        <p id="mensagem-descriptografada">Mensagem descriptografada: <span></span></p>
+        <div class="erro" id="senha-erro">A senha não coincide. Verifique a senha digitada.</div>
+        <div class="erro" id="mensagem-erro">A mensagem não coincide. Verifique a mensagem digitada.</div>
+    </div>
+    <script src="../../assets/js/functions/cryptography/cryptography.js"></script>
+</body>
+</html>
