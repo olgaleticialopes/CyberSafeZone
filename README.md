@@ -3,6 +3,103 @@
 ## HomePage
 <img src="../CyberSafeZone/public/assets/img/readme/homepage preview.jpeg" alt="exemplo imagem">
 
+## Tecnologias utilizadas: 
+
+- *HTML* :
+- *CSS* :
+- *JS* :
+- *VERCEL* :
+- *FIGMA* :
+- *BD4FREE* :
+
+## Detalhes sobre nosas funcionalidades, em forma de diagrama de classes: 
+
+### Gerador de Senhas: 
+~~~~mermaid
+classDiagram
+  class Slider {
+    fill: string
+    background: string
+    applyFill(slider): void
+  }
+
+  class RandomFunc {
+    getRandomLower(): string
+    getRandomUpper(): string
+    getRandomNumber(): string
+    getRandomSymbol(): string
+  }
+
+  class PasswordGenerator {
+    - slider: Slider
+    - randomFunc: RandomFunc
+    - generatedPassword: boolean
+    - resultContainerBound: object
+    applyFill(slider): void
+    secureMathRandom(): number
+    getRandomLower(): string
+    getRandomUpper(): string
+    getRandomNumber(): string
+    getRandomSymbol(): string
+    generatePassword(length, lower, upper, number, symbol): string
+    disableOnlyCheckbox(): void
+  }
+
+  class ResultContainer {
+    resultEl: HTMLElement
+    lengthEl: HTMLElement
+    uppercaseEl: HTMLElement
+    lowercaseEl: HTMLElement
+    numberEl: HTMLElement
+    symbolEl: HTMLElement
+    generateBtn: HTMLElement
+    copyBtn: HTMLElement
+    resultContainer: HTMLElement
+    copyInfo: HTMLElement
+    copiedInfo: HTMLElement
+    copyBtnClickHandler(): void
+    generateBtnClickHandler(): void
+  }
+
+  PasswordGenerator --|> Slider
+  PasswordGenerator --|> RandomFunc
+  PasswordGenerator --|> ResultContainer
+
+~~~~
+
+### Verificador de senhas: 
+
+~~~mermaid
+classDiagram
+  class VerificadorDeForca {
+    - senha: string
+    - resultado: HTMLElement
+    verificarForca(): void
+    calcularForca(senha): number
+    getForcaTexto(forca): string
+    estimarTempoQuebra(senha, forca): string
+    calcularEntropia(senha): number
+    formatarTempoEstimado(tempoEstimadoSegundos): string
+    getElement(id): HTMLElement
+    getInputValue(id): string
+    setResult(element, resultadoHtml): void
+    getColorForForca(forca): string
+  }
+
+  VerificadorDeForca --> getElement
+  VerificadorDeForca --> getInputValue
+  VerificadorDeForca --> setResult
+  VerificadorDeForca --> calcularForca
+  VerificadorDeForca --> getForcaTexto
+  VerificadorDeForca --> estimarTempoQuebra
+  VerificadorDeForca --> calcularEntropia
+  VerificadorDeForca --> formatarTempoEstimado
+  VerificadorDeForca --> getColorForForca
+
+~~~~
+
+
+
 ## Paleta de cores
 <img src="https://media.discordapp.net/attachments/1020872567738863716/1166513369063358634/Group_3.png?ex=654ac33b&is=65384e3b&hm=f5915d0938f8c60a366caba506c63160eb73cfb2f7629d5db84d21e21ccade56&=&width=1009&height=580" alt="paleta">
 
