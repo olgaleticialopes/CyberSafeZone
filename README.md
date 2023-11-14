@@ -1,7 +1,7 @@
 # 🔏 CYBERSAFEZONE 💾
 
 ## Preview Desktop
-<img src="../CyberSafeZone/public/assets/img/readme/homepage preview.jpeg" alt="exemplo imagem">
+<img src="./public/assets/img/readme/homepage preview.jpeg" alt="exemplo imagem">
 
 ## Tecnologias e Ferramentas utilizadas: 
 
@@ -99,10 +99,6 @@ classDiagram
 ~~~~
 
 
-
-## Paleta de cores
-<img src="https://media.discordapp.net/attachments/1020872567738863716/1166513369063358634/Group_3.png?ex=654ac33b&is=65384e3b&hm=f5915d0938f8c60a366caba506c63160eb73cfb2f7629d5db84d21e21ccade56&=&width=1009&height=580" alt="paleta">
-
 <div align="center">
     <div>
       <h1>Figma</h1>
@@ -111,17 +107,6 @@ classDiagram
     <br/>
     💖
 </div>
-
-## 📫 Contribuindo para CyberSafeZone
-Para contribuir com CyberSafeZone, siga estas etapas:
-
-1. Bifurque este repositório.
-2. Crie um branch: `git checkout -b <nome_branch>`.
-3. Faça suas alterações e confirme-as: `git commit -m '<mensagem_commit>'`
-4. Envie para o branch original: `git push origin CyberSafeZone/ <local>`
-5. Crie a solicitação de pull.
-
-Como alternativa, consulte a documentação do GitHub em [como criar uma solicitação pull](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
 
 ## 🤝 Colaboradores
 
@@ -155,6 +140,18 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
     </td>
   </tr>
 </table>
+
+## 📫 Contribuindo para CyberSafeZone
+Para contribuir com CyberSafeZone, siga estas etapas:
+
+1. Bifurque este repositório.
+2. Crie um branch: `git checkout -b <nome_branch>`.
+3. Faça suas alterações e confirme-as: `git commit -m '<mensagem_commit>'`
+4. Envie para o branch original: `git push origin CyberSafeZone/ <local>`
+5. Crie a solicitação de pull.
+
+Como alternativa, consulte a documentação do GitHub em [como criar uma solicitação pull](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
+
 
 
 ## 😄 Seja um dos contribuidores<br>
