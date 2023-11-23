@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Titillium+Web:300,700,900");
 @import url("https://fonts.googleapis.com/css?family=Palanquin:300");
 @import url("https://afeld.github.io/emoji-css/emoji.css");
+
 body {
   align-items: center;
   height: 100vh;
@@ -8,9 +9,9 @@ body {
   margin: 0;
   font-family: "Palanquin", sans-serif;
   font-size: 21px;
-  color: #8f959a;
+  color: #333; /* Darker text color for better contrast */
   line-height: 1.5;
-  background:  whitesmoke;
+  background: #f9f9f9; /* Light background color */
 }
 
 .container {
@@ -20,7 +21,6 @@ body {
   align-items: center;
   margin: 4em auto;
 }
-
 
 .inner-container {
   position: absolute;
@@ -33,7 +33,6 @@ body {
   width: 100%;
   margin: 0 auto 100px;
 }
-
 
 .content {
   position: absolute;
@@ -53,28 +52,33 @@ body {
 
 .card {
   position: relative;
-  background: #006466;
+  background: #f0f8f8; /* Light background color for cards */
   border-radius: 5px;
-  padding: 2em 0;
+  padding: 2em;
   height: 300px;
   box-sizing: border-box;
   transition: 0.3s ease;
   box-shadow: 0 3px 10px -2px rgba(0, 0, 0, 0.35);
 }
-.card:first-child, .card:nth-child(2) {
-  background: #00c4c7;
+
+.card:first-child,
+.card:nth-child(2) {
+  background: #b2f0f3; /* Light green background for special cards */
   height: 8px;
   border-radius: 5px 5px 0 0;
   padding: 0;
   box-shadow: none;
 }
+
 .card:first-child {
   margin: 0 20px;
-  background: #00b0b2;
+  background: #006466; /* Lighter green background for the first special card */
 }
+
 .card:nth-child(2) {
   margin: 0 10px;
 }
+
 .card .progress-container {
   background: rgba(37, 117, 252, 0.2);
   height: 6px;
@@ -84,8 +88,9 @@ body {
   width: 100%;
   border-radius: 0 0 5px 5px;
 }
+
 .card .progress-container .step {
-  background-color: #2575fc;
+  background-color: #006466;
   height: 6px;
   width: 33%;
   border-radius: 0 0 0 5px;
@@ -95,7 +100,7 @@ h1 {
   font-family: "Titillium Web", sans-serif;
   font-weight: 700;
   font-size: 3rem;
-  color: #00bfc2;
+  color: #006466;
   margin: 0;
 }
 
@@ -104,19 +109,21 @@ p {
 }
 
 a {
-  color: #00CED1;
+  color: #006466; /* Green color for links */
   text-decoration: none;
   position: relative;
 }
+
 a:before {
   content: "";
   position: absolute;
   bottom: 2px;
   left: 0;
   width: 0%;
-  border-bottom: 2px solid #00CED1;
+  border-bottom: 2px solid #006466; /* Green color for link underline */
   transition: 0.3s;
 }
+
 a:hover:before {
   width: 80%;
 }

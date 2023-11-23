@@ -11,6 +11,7 @@ function verificarForca() {
     setResult(resultado, resultadoHtml);
 }
 
+
 function calcularForca(senha) {
     const comprimentoMinimo = 6;
     const possuiMaiusculas = /[A-Z]/.test(senha);
@@ -27,12 +28,15 @@ function calcularForca(senha) {
     return forca;
 }
 
+
 function getForcaTexto(forca) {
     return forca === 4 ? "Forte" : forca === 3 ? "Média" : "Fraca";
 }
 
+
 function estimarTempoQuebra(senha, forca) {
-    const tentativasPorSegundo = 1e9;
+    //a senha esta tendo muitas tentativas por segundo entao a quantidade de horas para quebrar as senhas diminuem
+    const tentativasPorSegundo = 9e9;
     const conjuntoCaracteres = 94;
     const complexidadeFator = 0.01;
     const entropia = calcularEntropia(senha);
@@ -49,26 +53,46 @@ function calcularEntropia(senha) {
     return caracteresUnicos;
 }
 
+
 function formatarTempoEstimado(tempoEstimadoSegundos) {
     const minutos = Math.floor(tempoEstimadoSegundos / 60);
-    const segundos = Math.round(tempoEstimadoSegundos % 60);
-    const minutosTexto = minutos === 1 ? "minuto" : "minutos";
-    const segundosTexto = segundos === 1 ? "segundo" : "segundos";
+    const horas = minutos / 60; // Converter minutos para horas
+    const dias = horas / 24; // Converter horas para dias
+    const meses = dias / 30.44; // Média de dias em um mês
+    const anos = meses / 12; // Média de meses em um ano
 
-    return `${minutos} ${minutosTexto} e ${segundos} ${segundosTexto}`;
+    let tempoFormatado;
+
+    if (anos >= 1) {
+        tempoFormatado = anos.toFixed(1) + (anos === 1 ? " ano" : " anos");
+    } else if (meses >= 1) {
+        tempoFormatado = meses.toFixed(1) + (meses === 1 ? " mês" : " meses");
+    } else if (dias >= 1) {
+        tempoFormatado = dias.toFixed(1) + (dias === 1 ? " dia" : " dias");
+    } else {
+        const horasArredondadas = Math.round(horas * 100) / 100;
+        tempoFormatado = horasArredondadas.toFixed(2) + " horas";
+    }
+
+    return tempoFormatado;
+
 }
+
 
 function getElement(id) {
     return document.getElementById(id);
 }
 
+
 function getInputValue(id) {
     return getElement(id).value;
 }
 
+
 function setResult(element, resultadoHtml) {
     element.innerHTML = resultadoHtml;
 }
+
 
 function getColorForForca(forca) {
     switch (forca) {

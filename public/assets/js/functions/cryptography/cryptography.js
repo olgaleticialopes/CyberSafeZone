@@ -1,62 +1,56 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const mensagemInput = document.getElementById('mensagem');
-    const senhaInput = document.getElementById('senha');
-    const criptografarButton = document.getElementById('criptografar');
-    const descriptografarButton = document.getElementById('descriptografar');
-    const mensagemCriptografadaSpan = document.getElementById('mensagem-criptografada');
-    const mensagemDescriptografadaSpan = document.getElementById('mensagem-descriptografada');
-    const senhaErro = document.getElementById('senha-erro');
-    const mensagemErro = document.getElementById('mensagem-erro');
+function criptografar() {
+    const senha = document.getElementById('senha').value;
+    const chaveSecreta = document.getElementById('chaveSecreta').value;
+    const chaveUsuario = document.getElementById('chaveSecretaDescript').value;
 
-    criptografarButton.addEventListener('click', function() {
-        mensagemErro.style.display = 'none';
-        senhaErro.style.display = 'none';
+    if (chaveSecreta && chaveUsuario && chaveSecreta === chaveUsuario) {
+        const senhaCriptografada = CryptoJS.AES.encrypt(senha, chaveSecreta).toString();
+        document.getElementById('resultado').innerText = `Senha Criptografada: ${senhaCriptografada}`;
+    } else {
+        document.getElementById('resultado').innerText = 'Chave Secreta Inválida';
+    }
 
-        const mensagem = mensagemInput.value;
-        const senha = senhaInput.value;
-
-        if (mensagem && senha) {
-            const mensagemCriptografada = CryptoJS.AES.encrypt(mensagem, senha).toString();
-            mensagemCriptografadaSpan.style.display = 'block';
-            mensagemCriptografadaSpan.querySelector('span').textContent = mensagemCriptografada;
-            mensagemDescriptografadaSpan.style.display = 'none';
+    // verifica se os campos estao vazios
+    if (senha.trim() === '' || chaveSecreta.trim() === '') {
+        document.getElementById('resultado').innerText = 'Por favor, preencha todos os campos.';
+        return;
+    }
 
 
-            // Armazene a mensagem criptografada localmente, por exemplo, em sessionStorage ou localStorage
-            localStorage.setItem('mensagemCriptografada', mensagemCriptografada);
-        } else {
-            senhaErro.textContent = 'Por favor, insira uma mensagem e uma senha.';
-            senhaErro.style.display = 'block';
-        }
-    });
 
-    descriptografarButton.addEventListener('click', function() {
-        senhaErro.style.display = 'none';
-        mensagemErro.style.display = 'none';
+        
+}
 
-        const mensagemCriptografada = localStorage.getItem('mensagemCriptografada');
-        const senha = senhaInput.value;
 
-        if (mensagemCriptografada && senha) {
-            try {
-                const bytes = CryptoJS.AES.decrypt(mensagemCriptografada, senha);
-                const mensagemDescriptografada = bytes.toString(CryptoJS.enc.Utf8);
 
-                if (mensagemDescriptografada) {
-                    mensagemDescriptografadaSpan.style.display = 'block';
-                    mensagemDescriptografadaSpan.querySelector('span').textContent = mensagemDescriptografada;
-                    mensagemCriptografadaSpan.style.display = 'none';
-                } else {
-                    mensagemErro.style.display = 'block';
-                    mensagemErro.textContent = 'A mensagem não coincide. Verifique a mensagem digitada.';
-                }
-            } catch (error) {
-                senhaErro.style.display = 'block';
-                senhaErro.textContent = 'A senha não coincide. Verifique a senha digitada.';
-            }
-        } else {
-            senhaErro.textContent = 'Por favor, insira uma senha e a mensagem criptografada.';
-            senhaErro.style.display = 'block';
-        }
-    });
-});
+
+function descriptografar() {
+    const senhaCriptografada = document.getElementById('resultado').innerText.split(':')[1].trim();
+    const chaveSecreta = document.getElementById('chaveSecreta').value;
+    const chaveUsuario = document.getElementById('chaveSecretaDescript').value;
+    
+    
+
+   if (chaveSecreta === chaveUsuario) {
+        const senhaDescriptografada = CryptoJS.AES.decrypt(senhaCriptografada, chaveSecreta).toString(CryptoJS.enc.Utf8);
+        document.getElementById('resultado').innerText = `Senha Descriptografada: ${senhaDescriptografada}`;
+   } else {
+        document.getElementById('resultado').innerText = 'Chave Secreta Inválida';
+    }
+    
+       // verifica se os campos estao vazios
+    if (chaveUsuario.trim() === '' || chaveSecreta.trim() === '') {
+        document.getElementById('resultado').innerText = 'Por favor, preencha todos os campos.';
+        return;
+    }
+
+    if (senhaCriptografada.trim() === '') {
+        document.getElementById('resultado').innerText = 'Criptografia ja Realizada, Insira outra Mensagem';
+        return;
+    }
+    
+
+
+
+
+}

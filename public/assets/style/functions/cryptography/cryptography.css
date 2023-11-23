@@ -1,0 +1,82 @@
+body {
+   margin: 0;
+   outline: none;
+   box-sizing: border-box;
+   font-family: 'Noto Sans', sans-serif;
+   background-color: white; /* Light background color */
+}
+
+body * {
+   box-sizing: border-box;
+}
+
+.main-container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+}
+
+.card-container {
+   display: flex; 
+   align-items: center; 
+   justify-content: flex-end; 
+   width: 100%; 
+}
+
+.card {
+   border-radius: 20px; 
+   background: whitesmoke; /* Lighter green background color */
+   width: 500px; 
+   padding: 20px; 
+   text-align: center;
+}
+
+
+
+h1 {
+   font-size: 2rem;
+   color: #006466;
+}
+
+input[type="password"] {
+   width: 90%;
+   height: 40px;
+   border: none;
+   border-radius: 10px;
+   padding: 15px;
+   background: #c2cbcb;
+   color: #000;
+   font-size: 1rem;
+   outline: none;
+   box-sizing: border-box;
+   margin-bottom: 15px; 
+}
+
+label {
+   color: #006466;
+   font-weight: bold;
+}
+
+button {
+   width: 60%;
+   margin-top: 15px;
+   padding: 10px;
+   border-radius: 15px;
+   text-transform: uppercase;
+   font-weight: 800;
+   letter-spacing: 3px;
+   background: #006466;
+   color: #fff;
+}
+
+button:hover {
+   background: #005555;
+}
+
+.result {
+   font-weight: bold;
+   font-size: medium;
+   margin-top: 15px;
+   color: #005555;
+}
